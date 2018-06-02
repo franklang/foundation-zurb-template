@@ -1,6 +1,17 @@
 import $ from 'jquery';
 import whatInput from 'what-input';
 
+// VueJS
+import Vue from 'vue'
+import vueCustomElement from 'vue-custom-element'
+
+import MyCustomElement from './my-custom-element';
+
+Vue.use(vueCustomElement);
+
+Vue.customElement('my-custom-element', MyCustomElement);
+// end: VueJS
+
 window.$ = $;
 
 import Foundation from 'foundation-sites';
