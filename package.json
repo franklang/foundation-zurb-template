@@ -43,7 +43,7 @@
     "js-yaml": "^3.4.6",
     "rimraf": "^2.4.3",
     "vinyl-named": "^1.1.0",
-    "vue-loader": "^15.2.4",
+    "vue-loader": "^14.2.3",
     "vue-template-compiler": "^2.5.16",
     "webpack": "^2.6.1",
     "webpack-stream": "^3.2.0",
