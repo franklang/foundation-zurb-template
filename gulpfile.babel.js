@@ -76,6 +76,14 @@ function copy() {
 //   }, done);
 // }
 
+// Compile Twig templates to HTML
+function twig() {
+  return gulp.src('src/templates/*.html.twig') // run the Twig template parser on all .html files in the "src/templates" directory
+    .pipe($.twig())
+    .pipe(gulp.dest(PATHS.dist)) // output the rendered HTML files to the "dist" directory
+    .pipe(browser.reload({ stream: true }));
+}
+
 // Compile Sass into CSS
 // In production, the CSS is compressed
 function sass() {
@@ -157,4 +165,5 @@ function watch() {
   gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
   gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
   // gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
+  gulp.watch('src/templates/*.html.twig').on('all', gulp.series(twig, browser.reload));
 }
