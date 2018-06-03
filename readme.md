@@ -47,7 +47,16 @@ To create compressed, production-ready assets, run `npm run build`.
 ## Further documentation
 
 - Official [EditorConfig](https://editorconfig.org/) documentation. EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs.
-- [Front-end Development Kickstarter: All about the ZURB Template](https://zendev.com/2017/09/05/front-end-development-kickstarter-zurb-template.html) by Kevin Ball.
-- [JS implementation of the Twig Templating Language](https://github.com/twigjs/twig.js/) on GitHub.
-  - [See Twig.js implementation details wiki page for a **list of supported filters/functions/tags/tests**](https://github.com/twigjs/twig.js/wiki/Implementation-Notes).
-- [Adding Vue.js to Foundation's ZURB Stack](https://zendev.com/2018/04/18/adding-vue-files-to-foundation-template.html) by Kevin Ball.
+- Official [Foundation 6 for sites](https://foundation.zurb.com/sites/docs/) documentation and the [Starter projects > Zurb template](https://foundation.zurb.com/sites/docs/starter-projects.html#zurb-template) section.
+  - In-depth description of the Zurb template: [Front-end Development Kickstarter: All about the ZURB Template](https://zendev.com/2017/09/05/front-end-development-kickstarter-zurb-template.html) by Kevin Ball from ZURB.
+- Official [Twig](https://twig.symfony.com/doc/2.x/) documentation.
+  - [JS implementation of the Twig Templating Language](https://github.com/twigjs/twig.js/) on GitHub. [See Twig.js implementation details wiki page for a **list of supported filters/functions/tags/tests**](https://github.com/twigjs/twig.js/wiki/Implementation-Notes).
+  - [gulp-twig](https://www.npmjs.com/package/gulp-twig) package on npmjs.com
+  - [Frontend Templating with Gulp and Twig.js](http://analyticl.com/blog/frontend-templating-with-gulp-and-twig-js) on analyticl.com's blog.
+- Official [Vue.js](https://vuejs.org/) documentation.
+  - [Adding Vue.js to Foundation's ZURB Stack](https://zendev.com/2018/04/18/adding-vue-files-to-foundation-template.html) by Kevin Ball.
+
+## TODO's list
+
+- Add [custom data support](https://www.npmjs.com/package/gulp-data) for Twig.js templates (replacing ZURB starter's initial [Panini custom data functionality](https://foundation.zurb.com/sites/docs/panini.html#custom-data)).
+- Add support for SVG icons.

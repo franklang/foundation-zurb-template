@@ -78,7 +78,7 @@ function copy() {
 
 // Compile Twig templates to HTML
 function twig() {
-  return gulp.src('src/templates/*.twig') // run the Twig template parser on all .html files in the "src/templates" directory
+  return gulp.src('src/pages/*.twig') // run the Twig template parser on all .html files in the "src/templates" directory
     .pipe($.twig())
     .pipe(gulp.dest(PATHS.dist)) // output the rendered HTML files to the "dist" directory
     .pipe(browser.reload({ stream: true }));
@@ -177,5 +177,5 @@ function watch() {
   gulp.watch('src/assets/js/**/*.vue').on('all', gulp.series(javascript, browser.reload));
   gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
   // gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
-  gulp.watch('src/templates/*.twig').on('all', gulp.series(twig, browser.reload));
+  gulp.watch('src/pages/*.twig').on('all', gulp.series(twig, browser.reload));
 }
