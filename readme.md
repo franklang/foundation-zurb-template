@@ -1,12 +1,11 @@
-# ZURB Template
+# Foundation's ZURB stack including Twig (Twig.js) template engine and Vue.js progressive JS framework
 
-[![devDependency Status](https://david-dm.org/zurb/foundation-zurb-template/dev-status.svg)](https://david-dm.org/zurb/foundation-zurb-template#info=devDependencies)
+This is a fork of the official ZURB Template for use with [Foundation for Sites](http://foundation.zurb.com/sites). People from ZURB use the intitial template to deliver static code to their clients. This fork has a Gulp-powered build system with these features:
 
-**Please open all issues with this template on the main [Foundation for Sites](https://github.com/zurb/foundation-sites/issues) repo.**
-
-This is the official ZURB Template for use with [Foundation for Sites](http://foundation.zurb.com/sites). We use this template at ZURB to deliver static code to our clients. It has a Gulp-powered build system with these features:
-
-- Handlebars HTML templates with Panini
+- Defined coding styles with .editorconfig
+- ~~Handlebars HTML templates with Panini~~ replaced with:
+  - Twig (Twig.js) template engine
+  - Vue.js progressive JS framework
 - Sass compilation and prefixing
 - JavaScript module bundling with webpack
 - Built-in BrowserSync server
@@ -22,32 +21,6 @@ To use this template, your computer needs:
 - [NodeJS](https://nodejs.org/en/) (0.12 or greater)
 - [Git](https://git-scm.com/)
 
-This template can be installed with the Foundation CLI, or downloaded and set up manually.
-
-### Using the CLI
-
-Install the Foundation CLI with this command:
-
-```bash
-npm install foundation-cli --global
-```
-
-Use this command to set up a blank Foundation for Sites project with this template:
-
-```bash
-foundation new --framework sites --template zurb
-```
-
-The CLI will prompt you to give your project a name. The template will be downloaded into a folder with this name.
-
-Now `cd` to your project name and to start your project run 
-
-```bash
-foundation watch
-```
-
-### Manual Setup
-
 To manually set up the template, first download it with Git:
 
 ```bash
@@ -61,6 +34,8 @@ cd projectname
 npm install
 ```
 
+## Usage
+
 Finally, run `npm start` to run Gulp. Your finished site will be created in a folder called `dist`, viewable at this URL:
 
 ```
@@ -68,3 +43,11 @@ http://localhost:8000
 ```
 
 To create compressed, production-ready assets, run `npm run build`.
+
+## Further documentation
+
+- Official [EditorConfig](https://editorconfig.org/) documentation. EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs.
+- [Front-end Development Kickstarter: All about the ZURB Template](https://zendev.com/2017/09/05/front-end-development-kickstarter-zurb-template.html) by Kevin Ball.
+- [JS implementation of the Twig Templating Language](https://github.com/twigjs/twig.js/) on GitHub.
+  - [See Twig.js implementation details wiki page for a **list of supported filters/functions/tags/tests**](https://github.com/twigjs/twig.js/wiki/Implementation-Notes).
+- [Adding Vue.js to Foundation's ZURB Stack](https://zendev.com/2018/04/18/adding-vue-files-to-foundation-template.html) by Kevin Ball.

@@ -1,8 +1,6 @@
 <template>
   <div>
-    {% verbatim %}
       {{hello}}
-    {% endverbatim %}
   </div>
 </template>
 <script>
