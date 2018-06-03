@@ -1,3 +1,5 @@
+{# This is the base layout for your project, and will be used on every page. #}
+
 {% set title = "Twig.js templating test" %}
 {% set pageTitle = "Use Twig from the start!" %}
 {% set benefits = ["Fast!", "Easy!", "Efficient!"] %}
@@ -12,6 +14,7 @@
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
   </head>
   <body>
+    {# Pages you create in the src/pages/ folder are inserted here when the flattened page is created. #}
     <h3>{{ pageTitle }}</h3>
     <ul>
       {% for value in benefits %}

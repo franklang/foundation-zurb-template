@@ -1,16 +1,16 @@
 import $ from 'jquery';
 import whatInput from 'what-input';
 
-// VueJS
+// Vue.js
 import Vue from 'vue'
 import vueCustomElement from 'vue-custom-element'
 
-import MyCustomElement from './my-custom-element';
+import MyCustomElement from './components/my-custom-element';
 
 Vue.use(vueCustomElement);
 
 Vue.customElement('my-custom-element', MyCustomElement);
-// end: VueJS
+// end: Vue.js
 
 window.$ = $;
 
