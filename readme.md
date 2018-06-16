@@ -55,6 +55,8 @@ To create compressed, production-ready assets, run `npm run build`.
   - [Frontend Templating with Gulp and Twig.js](http://analyticl.com/blog/frontend-templating-with-gulp-and-twig-js) on analyticl.com's blog.
 - Official [Vue.js](https://vuejs.org/) documentation.
   - [Adding Vue.js to Foundation's ZURB Stack](https://zendev.com/2018/04/18/adding-vue-files-to-foundation-template.html) by Kevin Ball.
+  - [Setting up Vue 2 and Foundation 6](https://medium.com/@tommaso.marcelli/setting-up-vue-2-and-foundation-6-3f858b4ad20) by Tommaso Marcelli.
+- [Directly injecting data to Vue apps with Symfony/Twig](https://nehalist.io/directly-injecting-data-to-vue-apps-with-symfony-twig/).
 
 ## TODO's list
 
