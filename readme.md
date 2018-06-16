@@ -2,7 +2,7 @@
 
 This is a fork of the official ZURB Template for use with [Foundation for Sites](http://foundation.zurb.com/sites). People from ZURB use the intitial template to deliver static code to their clients. This fork has a Gulp-powered build system with these features:
 
-- Defined coding styles with .editorconfig
+- Defined coding styles using .editorconfig file
 - ~~Handlebars HTML templates with Panini~~ replaced with:
   - Twig (Twig.js) template engine
   - Vue.js progressive JS framework
