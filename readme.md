@@ -58,6 +58,6 @@ To create compressed, production-ready assets, run `npm run build`.
 
 ## TODO's list
 
-- Try [Twig namespaced paths](https://symfony.com/doc/current/templating/namespaced_paths.html) functionnality.
+- Try [Twig namespaced paths](https://symfony.com/doc/current/templating/namespaced_paths.html) functionnality. See [here](https://github.com/twigjs/twig.js/wiki#namespaces) for an example of implementation with Twig.js.
 - Add [custom data support](https://www.npmjs.com/package/gulp-data) for Twig.js templates (replacing ZURB starter's initial [Panini custom data functionality](https://foundation.zurb.com/sites/docs/panini.html#custom-data)).
 - Add support for SVG icons.
