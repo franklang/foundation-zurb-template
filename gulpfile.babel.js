@@ -79,6 +79,9 @@ function copy() {
 // Compile Twig templates to HTML
 function twig() {
   return gulp.src('src/pages/*.twig') // run the Twig template parser on all .html files in the "src/templates" directory
+    .pipe($.data(function(file) {
+      return require('./src/data/index-data.json');
+    }))
     .pipe($.twig())
     .pipe(gulp.dest(PATHS.dist)) // output the rendered HTML files to the "dist" directory
     .pipe(browser.reload({ stream: true }));
